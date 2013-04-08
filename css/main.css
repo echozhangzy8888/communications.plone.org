@@ -43,12 +43,20 @@
   src: url('fonts/DINBlack.otf') format('opentype');
 }
 
-.inner-container {
-  padding: 40px;
+header {
+  width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 1024px;
+  }
 }
 
 #downloadcurrent {
-  padding: 20px;
+  padding: 10px 20px;
   line-height: 55px;
   background-color: #eaf2f6;
 }
@@ -60,13 +68,13 @@
 }
 
 .currentversion {
-  font-size: 58px;
+  font-size: 60px;
 }
 
 .features {
-  width: 31.1% !important;
+  width: 30% !important;
   font-family: DINBold;
-  font-size: 16px;
+  font-size: 17px;
   color: #3399cc;
 }
 
@@ -80,16 +88,29 @@
 }
 
 .info {
-  width: 29% !important;
+  width: 30% !important;
   font-size: 14px;
 }
 
-.info ul {
-  margin: 0 0 0 10px;
+.info a {
+  font-family: DINMedium;
+  text-decoration: none;
 }
 
 .info li {
   display: inline-block;
+}
+
+.info li:after {
+  content: " /";
+}
+
+.info li:last-child:after {
+  content: "";
+}
+
+.info ul {
+  margin: 0 0 0 10px;
 }
 
 .info ul li {
